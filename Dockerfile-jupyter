@@ -1,4 +1,4 @@
-FROM astiunov/data-science:latest
+FROM yandexdataschool/neurohack-base:2016.12
 MAINTAINER Alexander Tiunov <astiunov@yandex-team.ru>
 
 RUN mkdir -p /srv
