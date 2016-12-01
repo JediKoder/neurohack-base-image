@@ -3,9 +3,8 @@ services:
   - docker
 language: generic
 install:
-  - make build
+  - if [[ "$TRAVIS_BRANCH" = "master" ]]; then make push_base ; make push_jupyter ; fi
 script:
   - set -e
   - make test
-  - if [[ "$TRAVIS_BRANCH" = "master" ]]; then make push ; fi
   - set +e
