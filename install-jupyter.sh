@@ -21,10 +21,10 @@ npm install -g configurable-http-proxy
 conda env update -n root --file jupyter_req.yml
 
 source activate py3_env
-conda install -y ipykernel && python -m ipykernel install
+conda install -y ipykernel requests && python -m ipykernel install
 
 source activate py2_env
-conda install -y ipykernel && python -m ipykernel install
+conda install -y ipykernel requests && python -m ipykernel install
 
 source activate r_env
 conda install -c r r-irkernel
