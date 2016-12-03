@@ -6,9 +6,8 @@ dependencies:
   - pandas=0.19.1
   - keras=1.1.1
   - tensorflow=0.10.0rc0
-  - theano=0.8.2
-  - lasagne=0.1
   - scikit-learn=0.18.1
+  - statsmodels
   - pip=9.0.1
   - pip:
     - xgboost==0.6a2
